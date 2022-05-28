@@ -2,10 +2,4 @@
 
 单纯学习HTML和CSS时纯手写的一个简单静态页面
 
-index
-
-![](image/README/1653711411511.png)
-
-about me
-
-![](image/README/1653711467526.png)
+线上预览地址：http://47.106.123.198:83/
