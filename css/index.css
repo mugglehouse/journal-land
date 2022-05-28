@@ -1,0 +1,77 @@
+/* 4、主体 */
+
+
+/* 排行 */
+
+.sele {
+    height: 35px;
+    /* background-color: rgb(241, 234, 234); */
+}
+
+.f3 {
+    float: left;
+    width: 600px;
+    height: 30px;
+}
+
+.f4 {
+    float: right;
+    width: 600px;
+    height: 30px;
+}
+
+.f3 ul li {
+    float: left;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.f4 ul li {
+    float: right;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+
+/* 分类 */
+
+.pic {
+    height: 1000px;
+    /* background-color: rgb(189, 173, 173); */
+}
+
+.pic1 {
+    float: left;
+    width: 360px;
+    height: 230px;
+    margin: 40px 20px;
+    /* background-color: rgb(159, 141, 141); */
+}
+
+.pic1 a {
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.pic1 a:hover {
+    background-color: #8DA5B5;
+    color: #fff;
+}
+
+.pic1 a img {
+    width: 360px;
+    height: 230px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.pic1 a img:hover {
+    width: 380px;
+    height: 250px;
+}
+
+.pic1 a p {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 16px;
+}

@@ -1,0 +1,112 @@
+/* 1、主体 */
+
+
+/*（1） 音乐 */
+
+.mus {
+    /* float: left; */
+    position: relative;
+    /* width: 500px; */
+    height: 600px;
+    /* margin: 0 auto; */
+    top: 60px;
+    /* background-color: rgb(159, 147, 147); */
+}
+
+
+/* 小熊 */
+
+.bear {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 40%;
+    top: 80px;
+    /* margin: 0 auto; */
+    background-color: #8DA5B5;
+    border-radius: 150px;
+    transition: all 0.5s;
+}
+
+.bear:hover {
+    width: 270px;
+    height: 270px;
+    left: 39%;
+}
+
+.run {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 140px;
+    /* padding: 10px; */
+    /* margin: 0px auto; */
+    background: url(../img/bear.png);
+    animation: bear 0.5s steps(8) infinite, move 2s linear forwards;
+}
+
+@keyframes bear {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 50%;
+        /* margin-left: -100px; */
+        transform: translateX(-50%);
+    }
+}
+
+
+/* 音乐播放器 */
+
+.music {
+    position: absolute;
+    width: 301px;
+    height: 50px;
+    top: 380px;
+    left: 457px;
+    background-color: #8DA5B5;
+    border-radius: 50px;
+}
+
+audio {
+    position: absolute;
+    padding: 8px 8px 12px 8px;
+}
+
+
+/* （2）文本 */
+
+.txt {
+    position: absolute;
+    width: 0px;
+    height: 50px;
+    left: 32%;
+    /* margin: 0px 10px 0px 1000px; */
+    /* background-color: rgb(140, 113, 113); */
+    font-size: 30px;
+    color: #8DA5B5;
+    overflow: hidden;
+    /* 文字强制一行内显示 */
+    white-space: nowrap;
+    /* ease开始结束慢中间快 linear匀速 steps()分步走 */
+    animation: w 2s steps(28) forwards;
+}
+
+@keyframes w {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 450px;
+    }
+}
